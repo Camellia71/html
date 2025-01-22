@@ -10,34 +10,108 @@
 <body>
     <!-- 相关属性要写到表格标签table里面 -->
     <table align="center" border="1" cellpadding="20" cellspacing="0" width="500">
-        <tr>
-            <th>姓名</th>
-            <th>性别</th>
-            <th>年龄</th>
-        </tr>
-        <tr>
-            <td>张岐奕</td>
-            <td>女</td>
-            <td>18</td>
-        </tr>
-        <tr>
-            <td>张三</td>
-            <td>男</td>
-            <td>20</td>
-        </tr>
-        <tr>
-            <td>张三</td>
-            <td>男</td>
-            <td>20</td>
-        </tr>
-        <tr>
-            <td>张三</td>
-            <td>男</td>
-            <td>20</td>
-        </tr>
+
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张岐奕</td>
+                <td colspan="2">女</td>
+                <!-- <td>18</td> -->
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td rowspan="3">男</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <!-- <td>男</td> -->
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <!-- <td>男</td> -->
+                <td>20</td>
+            </tr>
+        </tbody>
 
     </table>
+    <p>
+    <h4>无序列表</h4>
+    </p>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <p>
+    <h4>有序列表</h4>
+    </p>
+    <ol>
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+        <li>444</li>
+    </ol>
+    <p>
+    <h4>自定义列表</h4>
+    </p>
+    <dl>
+        <dt>好看</dt>
+        <dd>很好看</dd>
+        <dd>非常好看</dd>
+        <dd>是这样的</dd>
+        <dd>其实不然</dd>
+    </dl>
+    <p>
+    <h3>表单</h3>
+    </p>
+    <form action="demo.php" method="POST" name="name1">
+        <label for="name0">用户名:</label>
+        <input type="text" name="username" value="请输入用户名" id="name0" maxlength="6"><br />
+        密码：<input type="password" name="pwd" value-="请输入密码"><br />
+        年龄：<input type="hidden"><br />
 
+        性别： <label for="sex">男</label> <input type="radio" name="name1" value="男" id="sex" checked="checked">女<input
+            type="radio" name="name1" value="女"><br />
+        爱好：吃饭<input type="checkbox" name="1" value="吃饭"> 睡觉<input type="checkbox" name="1" value="睡觉"> 学习<input
+            type="checkbox" name="1" value="学习"><br />
+        <input type="submit"><br />
+        <input type="reset"><br />
+        <input type="button" value="重新填写"><br />
+        <input type="image"><br />
+        上传头像<input type="file">
+
+        <p>
+        <h4>select标签</h4>
+        </p>
+        籍贯：<select>
+            <option>山东</option>
+            <option>陕西</option>
+            <option>广东</option>
+            <option>广西</option>
+            <option>山西</option>
+            <option>河北</option>
+
+        </select>
+        <p>
+        <h4>文本域 textarea</h4>
+        </p>
+        <textarea cols="6" rows="5">
+            jiayoujiayoujiayou
+            xixixixixixixixixixixi
+
+        </textarea>
+
+
+    </form>
 </body>
 
 </html>

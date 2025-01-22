@@ -320,3 +320,189 @@ width         像素值或百分比           规定表格的宽度
 ###### 5.表格结构标签
 
 把表格划分为表格头部和表格主体两部分；
+
+```html
+<table>
+   <thead>                  内部必须有tr标签
+      <tr>
+         <th>...</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>...</td>
+      </tr>
+   </tbody>
+</table>
+```
+
+###### 6.合并单元格
+
+方式：
+
+1.跨行合并：rowspan=“合并单元格的个数”
+
+2.跨列合并：colspan="合并单元格的个数"
+
+目标单元格：（写合并代码）
+
+1.跨行：最上侧单元格为目标单元格，写合并代码；
+
+2.跨列：最左侧单元格为目标单元格，写合并代码；
+
+```html
+<td rowspan="2"></td>
+```
+
+##### 7.2 列表标签
+
+###### 1.无序列表
+
+ul 标签中只能放 li 标签，li 标签中可以放其他标签
+
+```html
+<ul>
+    <li>列表项1</li>
+    <li>列表项2</li>
+    <li>列表项3</li>
+    ...
+</ul>
+```
+
+###### 2.有序列表
+
+```html
+<ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    ...
+</ol>
+```
+
+###### 3.自定义列表
+
+```html
+<dl>
+    <dt> 名词1 </dt>
+    <dd> 解释1 </dd>
+    <dd> 解释2 </dd>
+    <dd> 解释3 </dd>
+    ...
+</dl>
+```
+
+##### 7.3表单标签
+
+###### 1.目的
+
+收集用户信息
+
+###### 2.组成
+
+包括表单域，表单控件（表单元素）和提示信息
+
+###### 3.表单域
+
+实现用户信息的收集和传递
+
+```html
+<form action="url地址" method="提交方式" name="表单域名称">
+    各种表单元素控件
+</form>
+```
+
+action      url地址          用于指定接收并处理表单数据的服务器程序的url地址
+
+method   get/post        用于设置表单数据的提交方式
+
+name       名称               用于指定表单的名称，以区分同一个页面中的多个表单域
+
+###### 4.表单控件
+
+1.input 输入表单元素
+
+```html
+<input type="属性值"/>
+```
+
+属性值：
+
+button                  定义可点击按钮（多数情况下，用于通过JavaScript启动脚本）
+
+checkbox             定义复选框
+
+file                         定义输入字段和“浏览”按钮，供文件上传
+
+hidden                  定义隐藏的输入字段
+
+image                   定义图像形式的提交按钮
+
+password             定义密码字段，该字段中的字符被掩码
+
+radio                     定义单选按钮
+
+reset                     定义重置按钮，重置按钮会清除表单中的所有数据
+
+submit                  定义提交按钮，提交按钮会把表单数据发送到服务器
+
+text                        定义单行的输入字段，用户可在其中输入文本，默认宽度为20个字符
+
+```html
+<input type="radio" name="1"/>
+```
+
+属性
+
+name                   用户自定义                定义input元素的名称
+
+value                   用户自定义                 规定input元素的值
+
+checked              checked                      规定此input元素首次加载时应当被选中
+
+maxlength          正整数                         规定输入字段中字符的最大长度
+
+```html
+<input type="text" name="username" value="请输入用户名" checked="checked">
+```
+
+name 和value 是每个表单元素都有的属性值,主要给后台人员使用.
+
+name 表单元素的名字, 要求单选按钮和复选框要有相同的name值.
+
+checked属性主要针对于单选按钮和复选框, 主要作用一打开页面,就要可以默认选中某个表单元素.
+
+maxlength是用户可以在表单元素输入的最大字符数, 一般较少使用.
+
+2.label标签
+
+<label>标签用于绑定一个表单元素, 当点击<label> 标签内的文本时，浏览器就会自动将焦点(光标)转到或者选择对应的表单元素上,用来增加用户体验；
+
+```html
+<label for="sex">男</label>
+<input type="radio" name="sex" id="sex"/>
+```
+
+核心：<label> 标签的for 属性应当与相关元素的id 属性相同。
+
+3.select表单元素
+
+```html
+<select>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    ...
+</select>
+```
+
+4.textarea表单元素
+
+用户输入内容较多时使用
+
+```html
+<textarea cols="6" rows="5">
+    内容           
+</textarea>
+```
+
