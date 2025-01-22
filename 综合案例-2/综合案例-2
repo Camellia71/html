@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合案例-2</title>
+
+</head>
+
+<body>
+    <p>
+    <h4>青春不常在，抓紧谈恋爱</h4>
+    </p>
+    性别：<label for="sex">男</label> <input type="radio" id="sex" name="1">
+    <label for="sex">女</label> <input type="radio" id="sex" name="1"><br />
+    生日：<select>
+        <option>请选择年</option>
+        <option>2000</option>
+        <option>1999</option>
+        <option>1998</option>
+        <option>1997</option>
+        <option>1996</option>
+        <option>1995</option>
+
+    </select>
+    <select>
+        <option>请选择月</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+    </select>
+    <select>
+        <option>请选择日</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+    </select>
+    所在地区：<input type="text" value="北京思密达" name="地区" /><br />
+    婚姻状况：<label for="marriage">未婚</label><input type="radio" id="marriage" name="1">
+    <label for="marriage">已婚</label><input type="radio" id="marriage" name="1">
+    <label for="marriage">离婚</label><input type="radio" id="marriage" name="1"><br />
+    学历：<input type="text" value="幼儿园" name="学历"><br />
+    喜欢的类型：<label for="like">妩媚的</label> <input type="checkbox" name="2" id="like">
+    <label for="like">可爱的</label> <input type="checkbox" name="2" id="like">
+    <label for="like">小鲜肉</label> <input type="checkbox" name="2" id="like">
+    <label for="like">老腊肉</label> <input type="checkbox" name="2" id="like">
+    <label for="like">都喜欢</label> <input type="checkbox" name="2" id="like">
+    自我介绍：<textarea cols="10" rows="3">自我介绍</textarea><br />
+    <input type="button" value="免费注册" /><br />
+    <label for="yes">我同意注册条款和会员加入标准</label> <input type="checkbox" id="yes"><br />
+    <a href="#">我是会员，立即登录</a>
+    <p>
+    <table>
+        <p>
+        <h4>我承诺</h4>
+        </p>
+        <ul>
+            <li>年满18岁，单身</li>
+            <li>抱着严肃的态度</li>
+            <li>真诚寻找另一半</li>
+
+        </ul>
+    </table>
+    </p>
+
+</body>
+
+</html>
