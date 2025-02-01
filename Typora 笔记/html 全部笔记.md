@@ -406,6 +406,25 @@ ul 标签中只能放 li 标签，li 标签中可以放其他标签
 
 实现用户信息的收集和传递
 
+form会独占一行，若使其不独占一行，则
+
+```html
+<head>
+    <style>
+        form {
+            display:inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        ...
+    </form>
+</body>
+```
+
+
+
 ```html
 <form action="url地址" method="提交方式" name="表单域名称">
     各种表单元素控件
