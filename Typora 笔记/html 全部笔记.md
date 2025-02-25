@@ -360,6 +360,18 @@ width         像素值或百分比           规定表格的宽度
 
 ul 标签中只能放 li 标签，li 标签中可以放其他标签
 
+去掉前方小圆点：css
+
+```html
+<style>
+	li {
+	list-style: none;
+	}
+</style>
+```
+
+
+
 ```html
 <ul>
     <li>列表项1</li>
